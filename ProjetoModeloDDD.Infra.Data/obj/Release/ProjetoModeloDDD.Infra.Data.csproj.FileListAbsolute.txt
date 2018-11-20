@@ -1,0 +1,14 @@
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Infra.Data\bin\Release\ProjetoModeloDDD.Infra.Data.dll.config
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Infra.Data\bin\Release\ProjetoModeloDDD.Infra.Data.dll
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Infra.Data\bin\Release\ProjetoModeloDDD.Infra.Data.pdb
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Infra.Data\bin\Release\EntityFramework.dll
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Infra.Data\bin\Release\EntityFramework.SqlServer.dll
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Infra.Data\bin\Release\ProjetoModeloDDD.Domain.dll
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Infra.Data\bin\Release\ProjetoModeloDDD.Domain.pdb
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Infra.Data\bin\Release\EntityFramework.xml
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Infra.Data\bin\Release\EntityFramework.SqlServer.xml
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Infra.Data\obj\Release\ProjetoModeloDDD.Infra.Data.csprojResolveAssemblyReference.cache
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Infra.Data\obj\Release\ProjetoModeloDDD.Infra.Data.csproj.CoreCompileInputs.cache
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Infra.Data\obj\Release\ProjetoModeloDDD.Infra.Data.csproj.CopyComplete
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Infra.Data\obj\Release\ProjetoModeloDDD.Infra.Data.dll
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Infra.Data\obj\Release\ProjetoModeloDDD.Infra.Data.pdb

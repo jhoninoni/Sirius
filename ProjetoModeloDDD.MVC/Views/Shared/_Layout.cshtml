@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> @{ string[] renderScripts = null; string[] renderStyles = null; renderStyles = ViewBag.Styles; renderScripts = ViewBag.Scripts; var usuario = new { nome = "Isaque", username = "Isaque" }; }
+
+    <title>@ViewBag.Title</title>
+
+    @if (renderStyles != null && renderStyles.Count() > 0)
+    {
+        //Carrega os scripts que a view filha necessita
+        @Styles.Render(renderStyles)
+    }
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row FundoMenuPrincipal">
+            <div class="col-xs-3 TextoMenuPrincipal imgLogoCSC">
+                <a href="/CscPlanejamento/" class="navbar-brand imgLogo">Portal CSC</a>
+            </div>
+
+            <div class="col-sm-6 AlinharCentralizado">
+                <a href="@ViewBag.ReturnLink" class="TextoTituloMenuPrincipal BordaTextoMenuPrincipal">@ViewBag.Title</a>
+            </div>
+
+            <div class="col-sm-3 TextoMenuPrincipal AlinharDireita">
+                <h6><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  <span style="display:inline-block">@usuario.nome</span> <span style="display:inline-block">(@usuario.username.ToLower())</span></h6>
+
+            </div>
+        </div>
+
+        <div class="row FundoMenuTitulo">
+            <div class="col-md-12">
+                <h2 class="TextoMenuTitulo">
+                    <img style="width:20px; height:20px;" src="~/Content/images/img-menu-principal.png" />@ViewBag.Title
+                </h2>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+
+        @RenderBody()
+        <div id="jbsLoading" class="csc-jbs-loading fade in" style="display: none;">
+            <img src="~/Content/images/img-loading.gif" alt="JBS loading" />
+        </div>
+    </div>
+    <div class="AlinharCentralizado">
+        <span style="font-size:6pt; color:#FFFFFF;">
+            © 2016 - 2017 JBS SA - CSC Centro de Serviços Compartilhados - Todos os direitos reservados
+        </span>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @if (renderScripts != null && renderScripts.Count() > 0)
+    {
+        //Carrega os scripts que a view filha necessita
+        @Scripts.Render(renderScripts)
+    }
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

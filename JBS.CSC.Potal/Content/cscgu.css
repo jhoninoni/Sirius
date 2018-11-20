@@ -1,0 +1,34 @@
+﻿.has-warning .dropdown-toggle{
+    border-color:#c09853;
+}
+
+.item-refeicao{
+    padding:10px;
+    background-color:white;
+    text-align:center;
+    border: 2px solid #f3f5f8;
+    border-radius:3px;
+    
+}
+.item-refeicao:hover{
+    background-color:#ffffee;
+}
+
+.item-refeicao-titulo{
+    margin: 5px 0 5px 0;
+    background-color:#c09853;
+    color:white;
+    border-radius:3px;
+}
+.item-refeicao-info{
+    padding:10px;
+    /*display:inline-block;*/
+    background-color:rgba(255,255,255,0);
+    text-align:inherit;
+}
+
+.csc-totalizador td{
+
+    font-weight:bold;
+    background-color:#fdf59a;
+}

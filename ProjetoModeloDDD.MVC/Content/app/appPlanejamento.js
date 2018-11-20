@@ -1,0 +1,13 @@
+﻿angular.module('cscPlanejamento',
+    ['ui.router',
+        'cscComponentes',
+        'cscMascaras',
+        'ui.grid',
+        'ui.grid.treeView',
+        'cscServicesAPI',
+        'ngAnimate',
+        'ngDragDrop',
+        'ui.bootstrap',
+        'ui.bootstrap.tpls',
+        'ui.bootstrap.popover'
+    ]);

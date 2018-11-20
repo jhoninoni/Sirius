@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Usuários</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/bundles/css")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="border-color:none;border-radius:0px">
+        <div class="row FundoMenuPrincipal" style="padding-left: 15px;padding-right: 25px;">
+            <div class="col-md-3 TextoMenuPrincipal imgLogoCSC">
+                <a href="Default.aspx">
+                    <img class="portalImgLogo" src="http://localhost:23720/Content/images/img-logo-PortalCSC.png" />
+                </a>
+            </div>
+            <div class="col-md-6 AlinharCentralizado">
+                <a href="@ViewBag.ReturnLink?CodSistema=@{@Html.Raw(1)}&CodPilar=@{@Html.Raw(1)}" class="TextoTituloMenuPrincipal BordaTextoMenuPrincipal">@ViewBag.Title</a>
+            </div>
+            <div class="col-md-3 TextoMenuPrincipal AlinharDireita">
+                <h6>
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    <span style="display:inline-block">@ViewBag.Usuario.DesNomeUsuario</span>
+                    <span style="display:inline-block">(@ViewBag.Usuario.DesLoginUsuario.ToLower())</span>
+                </h6>
+            </div>
+        </div>
+        <div class="row FundoMenuTitulo" style="padding-left:15px">
+            <div class="col-md-12">
+                <h2 class="TextoMenuTitulo">
+                    <img style="width:20px; height:20px;" src="http://localhost:23720/Content/images/img-menu-principal.png" />@ViewBag.Title
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content" style="margin-top:6%">
+        @RenderBody()
+    </div>
+    <footer style="margin-top:25px;">
+        <div class="navbar navbar-inverse navbar-fixed-bottom FundoMenuTitulo" style="border-color:none;border-radius:0px; min-height:30px;max-height:30px"">
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

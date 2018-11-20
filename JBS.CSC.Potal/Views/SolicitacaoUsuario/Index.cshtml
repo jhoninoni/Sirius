@@ -1,0 +1,81 @@
+﻿@model IEnumerable<ProjetoModeloDDD.Domain.Entities.SolicitacaoAcesso>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DesLoginUsuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DesNomeUsuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DesEmailUsuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodSistema)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DesSolicitacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LogDatSolicitacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DesResposta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LogDatResposta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodStatusLeitura)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DesLoginUsuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DesNomeUsuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DesEmailUsuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodSistema)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DesSolicitacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LogDatSolicitacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DesResposta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LogDatResposta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodStatusLeitura)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

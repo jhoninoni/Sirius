@@ -1,0 +1,91 @@
+﻿
+<div class="col-md-10">
+    <table class="table table-bordered table-condensed table-csc-sm" >
+        <thead>
+            <tr>
+                <th ng-repeat="coluna in colunas"  ng-style="{'width':coluna.width}">{{coluna.nome}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in lista | limitTo:18">
+
+                <td  ng-repeat="coluna in colunas" ng-style="{{coluna.estilo}}">
+                    <button ng-if="coluna.func" class="btn btn-primary btn-table-sm" ng-click="exec(coluna.func,item)">
+                        <span class="glyphicon glyphicon-plus-sign"></span>
+                    </button>
+                    {{item[coluna.nome]}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="col-md-2">
+    <div class="col-md-12">
+        <h4 class="titulo"><span class="glyphicon glyphicon-th"></span> Todas</h4>
+        <ul class="list-group" 
+            style='max-height:200px;overflow-x:auto'>
+            <li class="list-group-item btn-draggable" 
+                id="{{campo.nome}}"
+                data-drag="true" 
+                data-jqyoui-options ="{helper:'clone'}"
+                jqyoui-draggable="{index:{{$index}},animate:false,placeholder:'keep'}"
+                ng-model="campos"
+                ng-repeat="campo in campos">
+                <span class="glyphicon glyphicon-unchecked" ng-if="!selecionado(campo.nome)" ng-click="remover(campo.nome)"></span>
+                <span class="glyphicon glyphicon-check" ng-if="selecionado(campo.nome)" ng-click="remover(campo.nome)"></span> {{campo.nome}}</li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h4 class="titulo"><span class="glyphicon glyphicon-th-list"></span> Linhas</h4>
+        <ul class="thumbnail"
+            data-drop="true"
+            ng-model="colunas"
+            data-jqyoui-options="{accept:optColumns,revert: 'invalid'}"
+            jqyoui-droppable="{multiple:true}"
+            style='min-height:100px;'>
+            <li class="btn btn-default btn-block btn-draggable btn-sm" style="text-align:left"
+                id="{{coluna.nome}}"
+                data-drag="true"
+                data-drop="true"
+                data-jqyoui-options="{revert: 'invalid',accept:'.btn-draggable:not([ng-model=campos])'}"
+                jqyoui-droppable="{index:{{$index}}}"
+                jqyoui-draggable="{index:{{$index}},animate:true,insertInline:true, direction:'direcaoColuna'}"
+                data-direction="{{coluna.direcaoColuna}}"
+                ng-model="colunas"
+                ng-repeat="coluna in colunas">
+                <a class="btn btn-default btn-table-sm" uib-popover="Filtro" popover-title="Dados distinct para filtro" >
+                    <span class="glyphicon glyphicon-filter"></span> 
+                </a> {{coluna.nome}}
+                <button type="button" ng-click="removerColuna($index)" class="close">X</button>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h4 class="titulo"><span class="glyphicon glyphicon-th-list"></span> Agregação</h4>
+        <ul class="thumbnail"
+            data-drop="true"
+            ng-model="linhas"
+            data-jqyoui-options="{accept:optLinhas,revert:'invalid'}"
+            jqyoui-droppable="{multiple:true}"
+            style='min-height:100px;'>
+            <li class="btn btn-default btn-block btn-draggable btn-sm" style="text-align:left"
+                id="{{linha.nome}}"
+                data-drag="true"
+                data-drop="true"
+                data-jqyoui-options="{revert: 'invalid',accept:'.btn-draggable:not([ng-model=campos])'}"
+                jqyoui-droppable="{index:{{$index}}}"
+                jqyoui-draggable="{index:{{$index}},animate:true,insertInline:true, direction:'direcaoLinha'}"
+                data-direction="{{linha.direcaoLinha}}"
+                ng-model="linhas"
+                ng-repeat="linha in linhas">
+                <a uib-popover="Tipos de Agregação" popover-title="Selecione o tipo de agregação" class="btn btn-default btn-table-sm">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </a>
+                 {{linha.nome}}
+                <button type="button" ng-click="removerLinha($index)" class="close">X</button>
+            </li>
+        </ul>
+    </div>
+    <button type="button" class="btn btn-success btn-block btn-sm " ng-click="gerar()">Atualizar Dados</button>
+</div>

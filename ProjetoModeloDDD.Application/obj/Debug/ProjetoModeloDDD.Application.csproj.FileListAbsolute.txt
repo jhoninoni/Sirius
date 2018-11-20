@@ -1,0 +1,30 @@
+C:\Users\Julio\Desktop\ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Application.dll
+C:\Users\Julio\Desktop\ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Application.pdb
+C:\Users\Julio\Desktop\ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Domain.dll
+C:\Users\Julio\Desktop\ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Domain.pdb
+C:\Users\Julio\Desktop\ProjetoDDD\ProjetoModeloDDD.Application\obj\Debug\ProjetoModeloDDD.Application.csprojResolveAssemblyReference.cache
+C:\Users\Julio\Desktop\ProjetoDDD\ProjetoModeloDDD.Application\obj\Debug\ProjetoModeloDDD.Application.dll
+C:\Users\Julio\Desktop\ProjetoDDD\ProjetoModeloDDD.Application\obj\Debug\ProjetoModeloDDD.Application.pdb
+E:\COISAS JHONI\Jhoni\Jhoni-Projetos\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Application.dll
+E:\COISAS JHONI\Jhoni\Jhoni-Projetos\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Application.pdb
+E:\COISAS JHONI\Jhoni\Jhoni-Projetos\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Domain.dll
+E:\COISAS JHONI\Jhoni\Jhoni-Projetos\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Domain.pdb
+E:\COISAS JHONI\Jhoni\Jhoni-Projetos\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\obj\Debug\ProjetoModeloDDD.Application.csprojResolveAssemblyReference.cache
+E:\COISAS JHONI\Jhoni\Jhoni-Projetos\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\obj\Debug\ProjetoModeloDDD.Application.dll
+E:\COISAS JHONI\Jhoni\Jhoni-Projetos\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\obj\Debug\ProjetoModeloDDD.Application.pdb
+C:\Users\jhonibarros-mtz\Desktop\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Application.dll
+C:\Users\jhonibarros-mtz\Desktop\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Application.pdb
+C:\Users\jhonibarros-mtz\Desktop\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Domain.dll
+C:\Users\jhonibarros-mtz\Desktop\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Domain.pdb
+C:\Users\jhonibarros-mtz\Desktop\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\obj\Debug\ProjetoModeloDDD.Application.csprojResolveAssemblyReference.cache
+C:\Users\jhonibarros-mtz\Desktop\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\obj\Debug\ProjetoModeloDDD.Application.dll
+C:\Users\jhonibarros-mtz\Desktop\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\obj\Debug\ProjetoModeloDDD.Application.pdb
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Application.dll
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Application.pdb
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Domain.dll
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\bin\Debug\ProjetoModeloDDD.Domain.pdb
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\obj\Debug\ProjetoModeloDDD.Application.csprojResolveAssemblyReference.cache
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\obj\Debug\ProjetoModeloDDD.Application.dll
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\obj\Debug\ProjetoModeloDDD.Application.pdb
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\obj\Debug\ProjetoModeloDDD.Application.csproj.CoreCompileInputs.cache
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Application\obj\Debug\ProjetoModeloDDD.Application.csproj.CopyComplete

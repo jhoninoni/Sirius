@@ -1,0 +1,6 @@
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Domain\bin\Release\ProjetoModeloDDD.Domain.dll
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Domain\bin\Release\ProjetoModeloDDD.Domain.pdb
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Domain\obj\Release\ProjetoModeloDDD.Domain.csprojResolveAssemblyReference.cache
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Domain\obj\Release\ProjetoModeloDDD.Domain.csproj.CoreCompileInputs.cache
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Domain\obj\Release\ProjetoModeloDDD.Domain.dll
+C:\JBS\Jhoni-ProjetoDDD\ProjetoModeloDDD.Domain\obj\Release\ProjetoModeloDDD.Domain.pdb

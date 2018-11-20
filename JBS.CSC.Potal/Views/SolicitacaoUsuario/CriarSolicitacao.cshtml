@@ -1,0 +1,96 @@
+﻿@model JBS.CSC.Potal.Models.SolicitacaoAcessoModel
+
+@{
+    ViewBag.Title = "Solicitação de Ususário";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-horizontal">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-primary" style="border-color:#a94442">
+                    <div class="panel-heading" style="border-color:#a94442; background-color:#a94442;">
+                        ATENÇÃO
+                    </div>
+                    <div class="panel-body" style="padding-top:10px;padding-bottom:10px; font-size:15px">
+                        <ul>
+                            <li class="text-warning">Você ainda não possui acesso ao sistema selecionado!</li>
+                            <li class="text-warning">Preencha corretamente TODAS as informações abaixo e logo iremos liberar seu acesso!</li>
+                            <li class="text-warning">Informe campo "Descrição da Solicitação" exatamente o que você precisa para agilizar a liberação!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Solicitação de usuário
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-2">
+                                @Html.Label("Login", htmlAttributes: new { @class = "control-label", @style = "float:right; margin-right:20px;" })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.DesLoginUsuario, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.DesLoginUsuario, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-2">
+                                @Html.Label("Nome Completo", htmlAttributes: new { @class = "control-label", @style = "float:right; margin-right:20px;" })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.DesNomeUsuario, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.DesNomeUsuario, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-2">
+                                @Html.Label("E-mail", htmlAttributes: new { @class = "control-label", @style = "float:right; margin-right:20px;" })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.DesEmailUsuario, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.DesEmailUsuario, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-2">
+                                @Html.Label("Sistema", htmlAttributes: new { @class = "control-label", @style = "float:right; margin-right:20px;" })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.DropDownList("CodSistema", new SelectList(ViewBag.Sistema, "CodSistema", "DesSistema"), new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.CodSistema, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-2">
+                                @Html.Label("Descrição da Solicitação", htmlAttributes: new { @class = "control-label", @style = "float:right; margin-right:20px;" })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.TextAreaFor(model => model.DesSolicitacao, new { @class = "form-control", @cols = 20, @rows = 2, @style = "min-width: 59.5%;" })
+                                @Html.ValidationMessageFor(model => model.DesSolicitacao, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-8">
+                                <input style="min-width:100%" type="submit" value="Enviar solicitação de acesso" class="btn btn-success" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
